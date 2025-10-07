@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Timeless Style — Классический магазин</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      color: #222;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .catalog {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 5px gray;
+      width: 280px;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #333;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 700px) {
+      .catalog {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Timeless Style</h1>
+    <nav>
+      <a href="#">Главная</a>
+      <a href="#">Каталог</a>
+      <a href="#">О нас</a>
+      <a href="#">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Каталог</h2>
+
+    <div class="catalog">
+      <div class="product">
+        <img src="https://budless.kz/wp-content/uploads/2024/03/img_2963.jpg" alt="Костюм двубортный">
+        <h3>Костюм двубортный</h3>
+        <p>65% шерсть, 25% вискоза, 10% полиэстер<br>Размеры: 44–64</p>
+        <p><b>45 000 ₸</b></p>
+        <a href="Basket.html" class="btn">Добавить в корзину</a>
+      </div>
+
+      <div class="product">
+        <img src="https://sandrotuoni.com/wp-content/uploads/2025/02/bomber-oranzhevyj-mon01.jpg" alt="Оранжевый бомбер">
+        <h3>Оранжевый бомбер</h3>
+        <p>55% хлопок / 45% тенсель<br>Размеры: 44–64</p>
+        <p><b>67 000 ₸</b></p>
+        <a href="Basket.html" class="btn">Добавить в корзину</a>
+      </div>
+
+      <div class="product">
+        <img src="https://sandrotuoni.com/wp-content/uploads/2025/02/rubashka-muzhskaya-premium-so-shtangoj-belyj.jpg" alt="Белая рубашка">
+        <h3>Белая рубашка</h3>
+        <p>48% коттон, 52% полиэстер<br>Размеры: 44–64</p>
+        <p><b>15 000 ₸</b></p>
+        <a href="Basket.html" class="btn">Добавить в корзину</a>
+      </div>
+
+      <div class="product">
+        <img src="https://sandrotuoni.com/wp-content/uploads/2025/03/brogi-chernyj-brb100.jpg" alt="Броги из кожи">
+        <h3>Броги из натуральной кожи</h3>
+        <p>100% телячья кожа</p>
+        <p><b>25 000 ₸</b></p>
+        <a href="Basket.html" class="btn">Добавить в корзину</a>
+      </div>
+    </div>
+
+    <h2>Контакты</h2>
+    <p>Email: classic@shop.kz<br>Телефон: +7 777 777 77 77</p>
+  </main>
+
+  <footer>
+    © 2025 Timeless Style | Все права защищены
+  </footer>
+
+</body>
+</html>
